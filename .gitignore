@@ -2,6 +2,7 @@
 *.blg
 *.log
 *.tex.bak
+*.cls.bak
 *.bak
 *.log
 .DS*
