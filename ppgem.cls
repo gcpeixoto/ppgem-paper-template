@@ -63,7 +63,7 @@
 \RequirePackage[main=english,brazil]{babel}   			% English as main language; Portuguese as the second
 \RequirePackage{epsf,epsfig} 									% insert '.eps', ' .ps' postscript figures
 \RequirePackage{setspace} 									% specify line spacing for sections and paragraphs through built-in commands 
-\RequirePackage[hang,footnotesize]{caption} 			% include footnotes
+\RequirePackage[skip=2pt,hang]{caption} 			    % include caption
 \RequirePackage{subfig} 										% use subfigure environment
 \RequirePackage{nonfloat} 										% centralises tables and figs under nonfloat option [h] "here" 
 \RequirePackage{amsfonts,amsmath,amssymb,bm} 	% use a plethora of mathematical AMS fonts
@@ -88,7 +88,7 @@
 \RequirePackage{microtype} 									% text kerning (ajuste de espaço de caracter)
 
 % paragraph
-%\setlength{\parindent}{0pt} % changes indent length
+\setlength{\parindent}{0pt} % changes indent length
 \setlength{\parskip}{2mm} 
 
 % newcommands
@@ -99,11 +99,12 @@
 \newcommand{\CorrEmail}[1]{\def\@CorrEmail{#1}}
 \newcommand{\InstA}[1]{\def\@InstA{#1}}
 \newcommand{\InstB}[1]{\def\@InstB{#1}}
+\newcommand{\Year}[1]{\def\@Year{#1}}
 
 % use color links
 \ifnum \uselinks = 1
 \RequirePackage{color}
-\definecolor{lkcolor}{rgb}{0.0,0.3,0.2}
+\definecolor{lkcolor}{rgb}{0.0,0.5,0.0}
 \definecolor{url}{rgb}{0.,0.,0.5} % def NavyBlue
 \RequirePackage[colorlinks,linkcolor=lkcolor,%
                 urlcolor=url,citecolor=blue]{hyperref}
@@ -165,7 +166,8 @@
 }
 \begin{minipage}{0.495\textwidth}
 	\flushright
-	\url{www.ppg-em.uerj.br}
+	{ \color{NavyBlue} \textsf{PPG-EM Internal Seminars: Season \textbf{\@Year} } 
+	\\ \url{www.ppg-em.uerj.br} } 
 \end{minipage} 
 \smallskip 
 \hrulefill
