@@ -83,6 +83,19 @@ Use:
 - `figs/` is the suggested directory where you may store your figures
 - `instructions.txt` is the raw version of `README.md`
 
+### Compilation through Makefile
+
+If you use the command line, you may also compile your text by invoking
+
+``` bash
+make all
+```
+or clean the root directory by invoking
+
+``` bash
+make clean
+```
+
 ### Meta
 
 - Authors: 
