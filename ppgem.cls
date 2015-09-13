@@ -60,7 +60,7 @@
 \RequirePackage{calc}											% allows arithmetic among Latex expressions
 \RequirePackage{lipsum}										% inserts Latin text sample
 \RequirePackage{graphicx}										% includes figures
-\RequirePackage[english,brazil]{babel}   			% English as main language; Portuguese as the second
+\RequirePackage[english]{babel}   			% English as main language; Portuguese as the second
 \RequirePackage{epsf,epsfig} 									% insert '.eps', ' .ps' postscript figures
 \RequirePackage{setspace} 									% specify line spacing for sections and paragraphs through built-in commands 
 \RequirePackage[skip=2pt,hang]{caption} 			    % include caption
